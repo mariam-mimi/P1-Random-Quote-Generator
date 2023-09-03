@@ -15,25 +15,25 @@ const quotes = [
   {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
    source: "Nelson Mandela",
    year: 1998,
-   tags: " Inspirational"},
+   tags: ", Inspirational"},
   {quote: "Your time is limited, so don't waste it living someone else's life.",
   source: "Steve Jobs",
   citation: "Stanford Commencement Speech",
   year: 2005,
-  tags: " Inspirational"},
+  tags: ", Inspirational"},
   {quote: "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
   source: "Oprah Winfrey",
-  tags: " Inspirational"},
+  tags: ", Inspirational"},
   {quote: "You're braver than you believe, stronger than you seem, and smarter than you think.",
   source: "Christopher Robin",
   citation: "Winnie The Pooh",
   year: 1977,
-  tags: " Inspirational, Movie"},
+  tags: ", Inspirational, Movie"},
   {quote: "No amount of money ever bought a second of time.",
   source: "Tony Stark",
   citation: "Avengers: Endgame",
   year: 2019,
-  tags: " Inspirational, Movie"}
+  tags: ", Inspirational, Movie"}
 ];
 
 
