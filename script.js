@@ -46,11 +46,26 @@ function getRandomQuote(){
   return quotes[randomQuote];
 };
 
-
 /***
  * `printQuote` function
 ***/
-
+function printQuote() {
+  let getQuote = getRandomQuote();
+  let quoteObj = 
+    `<p class="quote">${getQuote.quote}</p>
+    <p class="source">${getQuote.source} `;
+    if (getQuote.citation){
+      quoteObj += `<span class="citation">${getQuote.citation}</span>`;
+    }
+    if (getQuote.year){
+      quoteObj += `<span class="year">${getQuote.year}</span>`
+    }
+    if (getQuote.tags){
+      quoteObj += `<span class="tags">${getQuote.tags}</span>`
+    }
+    quoteObj += `</p>`;
+    document.getElementById('quote-box').innerHTML = quoteObj; 
+};
 
 
 /***
