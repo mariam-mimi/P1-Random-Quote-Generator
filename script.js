@@ -50,7 +50,7 @@ function getRandomQuote(){
 /***
  * `printQuote` function
  * sets getQuote to the random quote index 
- * variable created to output the quote and source using HTML 
+ * variable created to output the quote and source into HTML 
  * checks if the quote has a citation, year, or tags and if it does, it outputs it next to the source
 ***/
 function printQuote() {
@@ -77,3 +77,6 @@ function printQuote() {
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+// Sets a timer for the quote to automatically refresh at regular intervals
+setInterval(printQuote, 6000);
