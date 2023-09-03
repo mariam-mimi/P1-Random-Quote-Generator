@@ -16,34 +16,41 @@ const quotes = [
    source: "Nelson Mandela",
    year: 1998,
    tags: ", Inspirational"},
+
   {quote: "Your time is limited, so don't waste it living someone else's life.",
   source: "Steve Jobs",
   citation: "Stanford Commencement Speech",
   year: 2005,
   tags: ", Inspirational"},
+
   {quote: "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
   source: "Oprah Winfrey",
   tags: ", Inspirational"},
+
   {quote: "You're braver than you believe, stronger than you seem, and smarter than you think.",
   source: "Christopher Robin",
   citation: "Winnie The Pooh",
   year: 1977,
   tags: ", Inspirational, Movie"},
+
   {quote: "No amount of money ever bought a second of time.",
   source: "Tony Stark",
   citation: "Avengers: Endgame",
   year: 2019,
   tags: ", Inspirational, Movie"},
+
   {quote: "May the Force be with you.",
   source: "Obi-Wan Kenobi",
   citation: "Star Wars",
   year: 1977,
   tags: ", Fun, Movie"},
+
   {quote: "Mama always said life was like a box of chocolates.",
   source: "Forrest Gump",
   citation: "Forrest Gump",
   year: 1994,
   tags: ", Movie, Funny"},
+  
   {quote: "Be the change that you wish to see in the world.",
   source: "Mahatma Gandhi",
   tags: ", Inspirational, Motivational"}
@@ -92,5 +99,4 @@ function printQuote() {
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
 
 // Sets a timer for the quote to automatically refresh at regular intervals
-// Thanks to https://www.w3schools.com/jsref/met_win_setinterval.asp
 setInterval(printQuote, 6000);
