@@ -9,6 +9,7 @@ project 1 - A Random Quote Generator
 
 /*** 
  * `quotes` array 
+ * stores all quotes, sources, citations, years, and tags
 ***/
 const quotes = [
   {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
@@ -38,7 +39,7 @@ const quotes = [
 
 /***
  * `getRandomQuote` function
- * Forms a random number, which is used to choose a random quote
+ * Forms a random number that sets randomQuote to the random integer to choose a random quote index
 ***/
 function getRandomQuote(){
   let randomNum = Math.floor(Math.random() * quotes.length);
@@ -48,6 +49,9 @@ function getRandomQuote(){
 
 /***
  * `printQuote` function
+ * sets getQuote to the random quote index 
+ * variable created to output the quote and source using HTML 
+ * checks if the quote has a citation, year, or tags and if it does, it outputs it next to the source
 ***/
 function printQuote() {
   let getQuote = getRandomQuote();
