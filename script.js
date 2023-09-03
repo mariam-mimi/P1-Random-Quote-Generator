@@ -40,10 +40,12 @@ const quotes = [
  * `getRandomQuote` function
  * Forms a random number, which is used to choose a random quote
 ***/
+function getRandomQuote(){
+  let randomNum = Math.floor(Math.random() * quotes.length);
+  const randomQuote = randomNum;
+  return quotes[randomQuote];
+};
 
-// function randomNum(min, max) {
- // return Math.floor(Math.random * (max - min)) + min;
-//}
 
 /***
  * `printQuote` function
